@@ -1,40 +1,68 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <header>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" async="true"></script>
     <title>zz-hh-aa</title>
-    <h1>Hello!</h1>    
 </header>
 
 <body>
-    <div class="box" id="intro">hello world</div>
+    <div class="box"><h1>Hi, I'm Ollie</h1></div>
+    <!-- try removing div and play around with font size & start with media queries (when height screen / width gets to x breakpoint, change screen in some way) -->
+    <div class="textbox"> 
 
-    <div class="toc" id="toc-container">
-        <div id="toc-header">Table of Contents</div>
-        <ol>
-            <li><a href="#section-1">Section 1</a></li>
-                <ul>
-                    <li>1a</li>
-                    <li>1b</li>
-                    <li>1c</li>
-                </ul>
-            <li>Section 2</li>
-            <li>Section 3</li>
-                <ul>
-                    <li>1a</li>
-                    <li>1b</li>
-                </ul>
-            <li>Section 4</li>
-        </ol>
+        <!--accordion 1--about me-->
+        <div class ="accordion">
+            <button type="button" class="accordion_button">About me</button>
+            <div class="accordion_content">
+                <p><strong>I currently work for a built environment non-profit, and before that I worked in music.</strong> Originally, I did a BA in fine art and art history. 
+                    It might seem like an odd trajectory, but there's a lot of interesting art out there to do with digital tech and the internet, and that's first what got me interested in the field.</p>
+                <p>Music is still a big part of my life, but working in it wasn’t for me! It’s still something I enjoy outside of work, along with reading speculative fiction, 
+                    growing things / volunteering on an agro-ecological farm, and learning about degrowth and sustainability.</p>
+                <p>My pronouns are they / them.</p>
+            </div>
+        </div>
+
+        <!--accordion 2--why code-->
+        <div class ="accordion">
+            <button type="button" class="accordion_button">Why web development?</button>
+            <div class="accordion_content">
+                <p><strong>I’ve worked in the non-profit tech sector for a few years and while I love the field, I've always been frustrated that I can't build things myself.</strong> I've mostly done content and marketing
+                    (which I also can’t say is something I’m hugely passionate about), but I feel like career progression isn't possible without technical skills. While I’m fairly new to it, code is exciting; there’s so much more you can 
+                    do with it and so many places you can go.</p>
+                <p>I feel like I have a decent grasp of certain technical concepts (from decentralisation to APIs), and while I've followed ethical tech projects and learned a bit about how they worked conceptually, 
+                    I could never get my hands dirty and contribute. Projects I'm thinking of here include the (now-defunct) co-op broadcaster db, alternative social media platforms <a href="https://scuttlebutt.nz/" target="new">scuttlebutt</a> and <a href="https://www.are.na/" target="new">are.na</a>, 
+                    and <a href="https://solar.lowtechmagazine.com/2018/09/how-to-build-a-low-tech-website/" target="new">low-tech</a> websites, I  could never get my hands dirty and get involved or contribute.</p>
+                <p>Furthermore, since tech is the main way many of us interface with the outside world, I think it’s one of those skills that everyone should have! I think basic literacy in the 
+                    things we use every day is important.</p>
+                <p>The non-profit, social enterprise tech sector is someting I'm passionate about. Outside of work, I’ve been involved in various mutual aid, organising, or volunteering projects 
+                    and it’s been a long-time dream of mine to build or contribute to tools for social movements. (One idea I’ve had in my head for ages is a ‘gender atlas’ type thing, inspired by the <a href="https://atlasofownership.org/" target="new">Atlas of Ownership</a> I got to contribute to through work.)</p>
+                <p>Long story short, building stuff is exciting and I want to be able to do it!</p>
+            </div>
+        </div>
+
+        <!--accordion 3--why fac-->
+        <div class ="accordion">
+            <button type="button" class="accordion_button">Why FAC?</button>
+            <div class="accordion_content">
+                <p><strong>FAC’s values-led approach really resonates with me, and it's the only socially-minded bootcamp I've been able to find.</strong> Because of shared values, I think I’d be a good fit in the course culture. 
+                    Beyond that, as a gender non-conforming person, I feel that it would be the most inclusive and welcoming place for me to learn. </p>
+            </div>
+        </div>
+
+        <!--accordion 4--fun facts-->
+        <div class ="accordion">
+            <button type="button" class="accordion_button">Fun facts</button>
+            <div class="accordion_content">
+                <p>Press this button for a random fact about me: <button id="random_fact">Random fact generator</button></p>
+                <p id="fact_output"></p>
+            </div>
+        </div>
+    </div> 
+    
+    <div class="footer_container">
+        <div class="footer_content" id="credits">Header font is <a href="https://typotheque.luuse.fun/" target="new" id="footer_link">Avara</a> and body <a href="https://hanken.co/en-gb/products/hk-grotesk" target="new" id="footer_link">HKGrotesk</a>. Website built by <a href="https://occasional.info/" target="new" id="footer_link">Ollie Zhang</a>.</div>
+        <div class="footer_content" id="datetime"></div>
     </div>
-    <!-- SOME TROUBLES HERE W TEXT ALIGNMENT, IN ADDITION TO CLOSING MODAL... -->
-    <div class="box" id="section-1"><p>hello world, here is some <a href="www.are.na">jargon</a><button class="open-modal-button" data-modal-target="#modal-clt">what's that?</button>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium atque adipisci autem! Iure similique inventore libero dolore deleniti! In officia ducimus nemo quae pariatur. Minus, dolore. Libero deleniti quibusdam ea quas nisi sapiente alias sit officia doloribus. Incidunt repellat magni, repellendus nesciunt ea consequuntur rem ipsa error iure quod, temporibus ullam deleniti. Cum officia veritatis tempora, cupiditate unde laboriosam corporis. Provident voluptates odio at? Quibusdam, veniam! Ad corporis accusantium temporibus deserunt repellat voluptates perferendis quae dolorem, enim voluptatibus eos excepturi.</p></div>
-    <div class="modal" id="modal-clt">A CLT is...<button close-modal-button="#modal-clt" class="close-modal-button">&times;</button></div>
-
-    <div class="box" id="section-2">hello world Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga suscipit aperiam hic at voluptate iusto ipsum fugit iure? Nulla saepe assumenda odio similique consequatur perspiciatis adipisci praesentium hic magni! Laboriosam ad pariatur quo et sunt consequuntur facere! Obcaecati, facere reprehenderit. Cum debitis natus aliquid maxime. Saepe rerum nihil assumenda nam mollitia quaerat eligendi perspiciatis, maxime consequatur nisi aspernatur ex sed quibusdam quasi aliquid tempore minima unde. Eum culpa recusandae vitae error fugit possimus ipsa perspiciatis provident accusamus? Eius, laboriosam cum.</div>
-    <div class="box" id="section-3">hello world Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque atque fugit, accusamus repellat quae labore magnam enim dolorem doloribus ab at ipsa et eaque dignissimos explicabo porro praesentium reiciendis similique accusantium autem voluptatum molestias vero. Rem magni quaerat ullam harum enim dignissimos, eum quos velit! Culpa quam ratione libero, voluptas sequi nam iure nostrum eum suscipit consequatur id incidunt similique quia odit, assumenda quo impedit corrupti nobis! Velit eveniet minima alias similique et aliquid. Iste perferendis nihil aliquam quibusdam consequuntur.</div>
-    <div class="box" id="section-4">hello world Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi laborum beatae qui ex mollitia hic minima, fugit animi facere fugiat? Veritatis vitae, ipsam libero iusto doloribus placeat. Exercitationem quasi cumque neque recusandae assumenda quae eius. Et est iste nobis ipsa doloribus laboriosam consequatur magni facilis deleniti. Exercitationem illo repellat inventore tempore sit veniam laboriosam enim doloribus? Ipsa sunt aperiam atque et exercitationem officia aliquam possimus numquam eveniet error fugiat rerum officiis, suscipit ipsam rem impedit quasi omnis, dolores laborum hic.</div>
-    <!-- <div id="overlay"></div> -->
-
 </body>
+</html>

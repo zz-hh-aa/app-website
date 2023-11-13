@@ -154,7 +154,19 @@ div {
 
 /* adapt for mobile */
 @media screen and (max-width: 900px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
     div.textbox {
         width: 90%;
+    }
+
+    #fact_output {
+        min-height: 200px;
     }
 }
